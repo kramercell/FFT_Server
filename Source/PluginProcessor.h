@@ -181,6 +181,7 @@ public:
 
 //END COPIED CODE
 
+    double rawVolume;
 
 
 

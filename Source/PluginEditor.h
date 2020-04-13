@@ -33,6 +33,8 @@ public:
             //do stuff here
             //Logger::writeToLog(String(volumeSlider.getValue()));
             //PluginTest040120AudioProcessor
+
+            processor.rawVolume = volumeSlider.getValue();
         }
     }
     

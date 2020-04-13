@@ -172,7 +172,12 @@ void FftServerAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuff
 
         // ..do something to the data...
         for (auto i = 0; i < buffer.getNumSamples(); ++i)
+        { 
+            //GAIN FUNCTION HERE
+            channelData[i] = channelData[i] * rawVolume;
+            //
             pushNextSampleIntoFifo(channelData[i]);
+        }
     //}
 }
 
