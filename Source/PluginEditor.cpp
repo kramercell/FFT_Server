@@ -41,7 +41,7 @@ void FftServerAudioProcessorEditor::paint (Graphics& g)
 
     g.setColour (Colours::white);
     g.setFont (15.0f);
-    g.drawFittedText ("FFT packets to Unity", getLocalBounds(), Justification::centred, 1);
+    g.drawFittedText ("Added Gain Control", getLocalBounds(), Justification::centred, 1);
 }
 
 void FftServerAudioProcessorEditor::resized()
