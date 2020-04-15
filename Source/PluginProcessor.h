@@ -81,6 +81,7 @@ public:
            
             scopeData[i] = level;                                  // [4]
         }
+        //CREATE BOOL
         sendToClients(scopeData);
     }
 
@@ -109,9 +110,9 @@ public:
 
     enum
     {
-        fftOrder = 4, //11 = 2048 points
+        fftOrder = 11, //11 = 2048 points
         fftSize = 1 << fftOrder,
-        scopeSize = 16 //changed from 512
+        scopeSize = 16 //Num Points Visualized changed from 512
     };
 
 
@@ -177,7 +178,7 @@ public:
 
     OwnedArray <ArbInterprocessConnection, CriticalSection> activeConnections; //DEFINES ACTIVE CONNECTIONS
     CriticalSection sockLock;
-    float msgFft[4]; //array to test sending
+    //float msgFft[4]; //array to test sending
 
 //END COPIED CODE
 
